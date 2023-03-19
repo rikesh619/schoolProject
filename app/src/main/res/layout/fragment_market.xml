@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_light_grey"
+    tools:context=".fragment.MarketFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:text="MARKET PLACE"
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@color/purple_200" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/market_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp" />
+
+    </LinearLayout>
+</FrameLayout>
